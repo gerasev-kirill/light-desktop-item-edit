@@ -1,0 +1,54 @@
+#!@PYTHON@
+# -*- coding: utf-8 -*-
+#   Simple desktop item edit
+#   Copyright (C) 2012  Gerasev Kirill
+#
+#   This library is free software; you can redistribute it and/or
+#   modify it under the terms of the GNU Library General Public
+#   License as published by the Free Software Foundation; either
+#   version 2 of the License, or (at your option) any later version.
+#
+#   This library is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#   Library General Public License for more details.
+#
+#   You should have received a copy of the GNU Library General Public
+#   License along with this library; if not, write to the Free Software
+#   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+import sys,os
+sys.path.insert(1, '@pythondir@')
+import ldie
+
+DATA_PATH="@pkgdatadir@"
+
+def print_version():
+    print "Version @VERSION@"
+    
+def print_help():
+    print "Usage:"
+    print "  @PACKAGE@ [FILE...] - Edit .desktop and .directory files\n"
+    print "Options:"
+    print "  --version\tprint version of program"
+    print "  --help\tprint this help"
+    
+    
+print sys.argv
+argv=sys.argv[1:]
+
+
+if len(argv)>0:
+    if argv[0]=="--help" or argv[0]=="-h":
+        print_help()
+    elif argv[0]=="--version" or argv[0]=="-v":
+        print_version()
+    else:
+        if os.path.splitext(argv[0])[1]==".directory":
+            app=ldie.DirMainWindow(DATA_PATH, argv[0],"@PACKAGE@" )
+        elif os.path.splitext(argv[0])[1]==".desktop":
+            app=ldie.DesktopMainWindow(DATA_PATH, argv[0],"@PACKAGE@")
+        else:
+            print "Invalid option or file. Try --help\n"
+else:
+    print_help()
