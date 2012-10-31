@@ -1,0 +1,59 @@
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+msgstr ""
+
+msgid "Launcher"
+msgstr ""
+
+msgid "Type:"
+msgstr ""
+
+msgid "Name:"
+msgstr ""
+
+msgid "Command:"
+msgstr ""
+
+msgid "Categories:"
+msgstr ""
+
+msgid "Comment:"
+msgstr ""
+
+msgid "Browse..."
+msgstr ""
+
+msgid "Advanced"
+msgstr ""
+
+msgid "Show launcher only in DE:"
+msgstr ""
+
+msgid "Use startup notification"
+msgstr ""
+
+msgid "Image name in icon theme: \n(or full path to image file)"
+msgstr ""
+
+msgid "Directory"
+msgstr ""
+
+msgid "Application"
+msgstr ""
+
+msgid "Application in terminal"
+msgstr ""
+
+msgid "Location"
+msgstr ""
+
+msgid "Location:"
+msgstr ""
+
+msgid "Choose an icon..."
+msgstr ""
+
+msgid "Choose an application..."
+msgstr ""

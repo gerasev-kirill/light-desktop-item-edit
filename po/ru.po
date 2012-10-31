@@ -1,0 +1,58 @@
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+msgid ""
+msgstr ""
+
+msgid "Launcher"
+msgstr "Кнопка запуска"
+
+msgid "Type:"
+msgstr "Тип:"
+
+msgid "Name:"
+msgstr "Имя:"
+
+msgid "Command:"
+msgstr "Команда:"
+
+msgid "Categories:"
+msgstr "Категории:"
+
+msgid "Comment:"
+msgstr "Примечание:"
+
+msgid "Browse..."
+msgstr "Выбрать..."
+
+msgid "Advanced"
+msgstr "Дополнительно"
+
+msgid "Show launcher only in DE:"
+msgstr "Отображать кнопку запуска только в ДЕ:"
+
+msgid "Use startup notification"
+msgstr "Использовать уведомление при запуске"
+
+msgid "Image name in icon theme: \n(or full path to image file)"
+msgstr "Имя иконки в теме:  \n(или полный путь к картинке)"
+
+msgid "Directory"
+msgstr "Папка"
+
+msgid "Application"
+msgstr "Приложение"
+
+msgid "Application in terminal"
+msgstr "Приложение в терминале"
+
+msgid "Location"
+msgstr "Адрес"
+
+msgid "Location:"
+msgstr "Адрес:"
+
+msgid "Choose an icon..."
+msgstr "Выберите иконку..."
+
+msgid "Choose an application..."
+msgstr "Выберите приложение..."
