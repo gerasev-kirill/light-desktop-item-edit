@@ -1,8 +1,8 @@
-SUBDIRS = src ui 
+SUBDIRS = src ui po 
 
 bin_SCRIPTS = light-desktop-item-edit
 CLEANFILES = $(bin_SCRIPTS)
-EXTRA_DIST = light-desktop-item-edit.in
+EXTRA_DIST = config.rpath m4/ChangeLog  light-desktop-item-edit.in
 
 do_substitution = sed -e 's,[@]pythondir[@],$(pythondir),g' \
 	-e 's,[@]PACKAGE[@],$(PACKAGE),g' \
@@ -19,3 +19,5 @@ light-desktop-item-edit: light-desktop-item-edit.in Makefile
 uninstall-local:
 	-rm -r $(light_desktop_item_editdocdir)
 
+
+ACLOCAL_AMFLAGS = -I m4
