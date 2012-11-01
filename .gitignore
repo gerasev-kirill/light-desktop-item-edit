@@ -1,0 +1,10 @@
+*~
+autom4te.cache
+ABOUT-NLS
+config.*
+*Makefile
+*.swp
+*.log
+*.scan
+aclocal.m4
+light-desktop-item-edit
