@@ -21,6 +21,7 @@ from ini import Ini
 
 class MainWindow(object):
     def __init__(self,data_dir,desktop_file_path,pkgname):
+        print Gtk.__file__
         self.file_path = data_dir
         self.dfile=Ini(desktop_file_path)
         gettext.bindtextdomain(pkgname, os.path.dirname(data_dir)+"/locale")
