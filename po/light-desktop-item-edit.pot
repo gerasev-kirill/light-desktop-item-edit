@@ -74,10 +74,10 @@ msgid "print version of program"
 msgstr ""
 
 msgid "print this help"
-msgstr "вывести эту справку"
+msgstr ""
 
 msgid "Invalid option or file. Try "
-msgstr "Неправильная опция или путь к файлу. Попытайтесь "
+msgstr ""
 
 
 
