@@ -31,7 +31,7 @@ class Ini(object):
             f.close()
             for line in lines:
                 l=line.split("=")
-                if len(l)>1 and l[0]!="Encoding":
+                if len(l)>1 and l[0]!="Encoding" l[0]!="Version" :
                     self.desktop_item.__setitem__(l[0],"=".join(l[1:]))
                     
     def get(self,key):
@@ -66,7 +66,6 @@ class Ini(object):
         f.write("Encoding=UTF-8\n")
         keys=self.desktop_item.keys()
         keys.sort()
-        print keys
         f.write("Type="+self.desktop_item["Type"]+"\n")
         f.write("Name="+self.desktop_item["Name"]+"\n")
  
@@ -74,6 +73,5 @@ class Ini(object):
             if key not in ("Type", "Name"):
                 f.write(key+"="+self.desktop_item[key]+"\n")
         f.close()
-        from os import system
-        system("chmod +x "+self.path)
+        os.system("chmod +x "+self.path)
         

@@ -40,7 +40,6 @@ def print_help():
     print "  --help\t"+_("print this help")
     
     
-print sys.argv
 argv=sys.argv[1:]
 
 
