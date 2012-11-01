@@ -21,7 +21,6 @@ from ini import Ini
 
 class MainWindow(object):
     def __init__(self,data_dir,desktop_file_path,pkgname):
-        print Gtk.__file__
         self.file_path = data_dir
         self.dfile=Ini(desktop_file_path)
         gettext.bindtextdomain(pkgname, os.path.dirname(data_dir)+"/locale")
@@ -76,7 +75,6 @@ class MainWindow(object):
     def command_changed(self,w):
         text=self.tree.get_object("command").get_text()
         self.dfile.set("Icon", text.split(" ")[0])
-        print text+"\n"
         if  text.split(" ")[0].__len__()<1:
             self.user_set_img=False
             self.tree.get_object("ok").set_sensitive(False)
@@ -202,7 +200,6 @@ class MainWindow(object):
         if not self.user_set_img:
             self.dfile.remove("Icon")
 
-        print command
         self.dfile.save()
 
         

@@ -125,7 +125,6 @@ class MainWindow(object):
             else:
                 LANG="["+LANG[:2]+"]"
         
-        print self.dfile.get("Name"+LANG)
         self.tree.get_object("name").set_text(self.dfile.get("Name"))
         self.tree.get_object("comment").set_text(self.dfile.get("Comment"))
         self.load_icon()
