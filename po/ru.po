@@ -57,3 +57,24 @@ msgstr "Выберите иконку..."
 
 msgid "Choose an application..."
 msgstr "Выберите приложение..."
+
+msgid "Version"
+msgstr "Версия"
+
+msgid "Usage:"
+msgstr "Использование:"
+
+msgid "[FILE...] - Edit .desktop and .directory files"
+msgstr "[ФАЙЛ...] - Утилита для редактирования файлов *.desktop и *.directory"
+
+msgid "Options:"
+msgstr "Опции:"
+
+msgid "print version of program"
+msgstr "вывести версию программы"
+
+msgid "print this help"
+msgstr "вывести эту справку"
+
+msgid "Invalid option or file. Try "
+msgstr "Неправильная опция или путь к файлу. Попытайтесь "
