@@ -149,7 +149,7 @@ class MainWindow(object):
         elif self.dfile.get("Name["+LANG[:2]+"]").__len__():
           self.tree.get_object("name").set_text(self.dfile.get("Name["+LANG[:2]+"]"))
         else:
-          self.tree.get_object("name").set_text(self.dfile.get("Name")
+          self.tree.get_object("name").set_text(self.dfile.get("Name"))
         self.tree.get_object("command").set_text(self.dfile.get("Exec"))
         self.tree.get_object("categories").set_text(self.dfile.get("Categories"))
         self.tree.get_object("comment").set_text(self.dfile.get("Comment"))
