@@ -139,7 +139,17 @@ class MainWindow(object):
                     self.img.set_from_pixbuf(pixbuf)
             
     def load_desktop_file(self):
-        self.tree.get_object("name").set_text(self.dfile.get("Name"))
+        if os.environ.has_key("LANG"):
+            LANG=os.environ["LANG"][:5]
+        else:
+            LANG=""
+        
+        if self.dfile.get("Name["+LANG+"]").__len__():
+            self.tree.get_object("name").set_text(self.dfile.get("Name["+LANG+"]"))
+        elif self.dfile.get("Name["+LANG[:2]+"]").__len__():
+          self.tree.get_object("name").set_text(self.dfile.get("Name["+LANG[:2]+"]"))
+        else:
+          self.tree.get_object("name").set_text(self.dfile.get("Name")
         self.tree.get_object("command").set_text(self.dfile.get("Exec"))
         self.tree.get_object("categories").set_text(self.dfile.get("Categories"))
         self.tree.get_object("comment").set_text(self.dfile.get("Comment"))
