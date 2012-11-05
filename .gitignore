@@ -4,6 +4,7 @@ ABOUT-NLS
 config.*
 *Makefile
 *.swp
+*.swo
 *.log
 *.scan
 aclocal.m4

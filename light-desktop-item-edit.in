@@ -31,7 +31,9 @@ _ = gettext.gettext
 
 def print_version():
     print _("Version") + " @VERSION@"
-    
+    print _("Homepage: ") + "https://github.com/gerasev-kirill/light-desktop-item-edit"
+    print _("Autor: ")+ "Gerasev Kirill"
+
 def print_help():
     print _("Usage:")
     print "  @PACKAGE@ "+ _("[FILE...] - Edit .desktop and .directory files")+"\n"

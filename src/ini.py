@@ -21,7 +21,7 @@ import os
 class Ini(object):
     def __init__(self,path):
         self.path=path
-        self.desktop_item={}
+        self.desktop={}
         self.read()
         
     def read(self):
@@ -31,47 +31,53 @@ class Ini(object):
             f.close()
             for line in lines:
                 l=line.split("=")
-                if len(l)>1 and l[0]!="Encoding" and  l[0]!="Version" :
-                    self.desktop_item.__setitem__(l[0],"=".join(l[1:]))
+                if len(l)==1 and not l[0].startswith("#"):# parse all entry [NAME]
+                  entry=l[0]
+                  self.desktop.__setitem__(entry,{})
+                elif l[0]!="Encoding" and  l[0]!="Version" and not l[0].startswith("#"):# and add them to dictionary
+                  self.desktop[entry].__setitem__(l[0],"=".join(l[1:]))
+        else:
+          self.desktop.__setitem__("[Desktop Entry]",{})
                     
     def get(self,key):
+        dic=self.desktop["[Desktop Entry]"]
         if os.environ.has_key("LANG"):
             LANG=os.environ["LANG"][:5]
         else:
             LANG=""
-        if self.desktop_item.has_key(key+"["+LANG+"]"):
-            return self.desktop_item[key+"["+LANG+"]"]
-        elif self.desktop_item.has_key(key+"["+LANG[:2]+"]"):
-            return self.desktop_item[key+"["+LANG[:2]+"]"]
-        elif self.desktop_item.has_key(key):
-            return self.desktop_item[key]
+        if dic.has_key(key+"["+LANG+"]"):
+            return dic[key+"["+LANG+"]"]
+        elif dic.has_key(key+"["+LANG[:2]+"]"):
+            return dic[key+"["+LANG[:2]+"]"]
+        elif dic.has_key(key):
+            return dic[key]
         else:
             return ""
         
     def set(self,key,value):
         if len(value)>1:
-            self.desktop_item.__setitem__(key,value)
-        elif self.desktop_item.has_key(key):
-            self.desktop_item.__delitem__(key)
+            self.desktop["[Desktop Entry]"].__setitem__(key,value)
+        elif self.desktop.has_key(key):
+            self.desktop["[Desktop Entry]"].__delitem__(key)
     
     def remove(self,key):
-        if self.desktop_item.has_key(key):
-            self.desktop_item.__delitem__(key)
+        if self.desktop["[Desktop Entry]"].has_key(key):
+            self.desktop["[Desktop Entry]"].__delitem__(key)
     
     def save(self):
         f=open(self.path,"w")
-        f.write("#!/usr/bin/env xdg-open\n\n")
-        f.write("[Desktop Entry]\n")
-        f.write("Version=1.0\n")
-        f.write("Encoding=UTF-8\n")
-        keys=self.desktop_item.keys()
-        keys.sort()
-        f.write("Type="+self.desktop_item["Type"]+"\n")
-        f.write("Name="+self.desktop_item["Name"]+"\n")
- 
-        for key in keys:
-            if key not in ("Type", "Name"):
-                f.write(key+"="+self.desktop_item[key]+"\n")
+        f.write("#!/usr/bin/env xdg-open\n")
+        #f.write("Version=1.0\n")
+        #f.write("Encoding=UTF-8\n")
+        entries=self.desktop.keys()
+        for entry in entries:
+          dic=self.desktop[entry]
+          keys=dic.keys()
+          keys.sort()
+          f.write(entry+"\n")
+          for key in keys:
+             f.write(key+"="+dic[key]+"\n")
+
         f.close()
         os.system("chmod +x "+self.path)
         

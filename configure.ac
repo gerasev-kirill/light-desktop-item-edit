@@ -4,7 +4,7 @@ AM_INIT_AUTOMAKE([1.10])
 
 AM_SILENT_RULES([yes])
 
-#with python3 program crashes on "import gi.repository"
+#with python3 program crashes on "import gi.repository" on my machine=)
 PYTHON=/usr/bin/python2.7
 
 AM_PATH_PYTHON(2.7)
@@ -16,12 +16,11 @@ AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Gettext package])
 AM_GLIB_GNU_GETTEXT
 IT_PROG_INTLTOOL([0.40.0])
-
+PKG_CHECK_MODULES(LIGHT_DESKTOP_ITEM_EDIT, pygobject-3.0)
 
 AC_CONFIG_FILES([ po/Makefile.in
-Makefile
-src/Makefile
-ui/Makefile
-
+                  Makefile
+                  src/Makefile
+                  ui/Makefile
 ])
 AC_OUTPUT

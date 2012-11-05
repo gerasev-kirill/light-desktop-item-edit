@@ -79,5 +79,9 @@ msgstr ""
 msgid "Invalid option or file. Try "
 msgstr ""
 
+msgid "Images"
+msgstr ""
 
+msgid "Choose an application..." 
+msgstr ""
 

@@ -49,13 +49,13 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 subdir = src
 DIST_COMMON = $(ldie_PYTHON) $(srcdir)/Makefile.am \
-	$(srcdir)/Makefile.in $(top_srcdir)/py-compile
+	$(srcdir)/Makefile.in $(top_srcdir)/mkinstalldirs \
+	$(top_srcdir)/py-compile
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
-am__aclocal_m4_deps = $(top_srcdir)/m4/nls.m4 \
-	$(top_srcdir)/configure.ac
+am__aclocal_m4_deps = $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
-mkinstalldirs = $(install_sh) -d
+mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 AM_V_P = $(am__v_P_$(V))
@@ -154,6 +154,8 @@ INTLTOOL__v_MERGE_0 = @echo "  ITMRG " $@;
 LDFLAGS = 
 LIBOBJS = 
 LIBS = 
+LIGHT_DESKTOP_ITEM_EDIT_CFLAGS = -I/usr/include/pygobject-3.0 -I/usr/lib/libffi-3.0.11/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  
+LIGHT_DESKTOP_ITEM_EDIT_LIBS = -lgobject-2.0 -lglib-2.0  
 LTLIBOBJS = 
 MAKEINFO = ${SHELL} /home/kirill/progects/ldie/missing --run makeinfo
 MKDIR_P = /usr/bin/mkdir -p
@@ -170,6 +172,9 @@ PACKAGE_TARNAME = light-desktop-item-edit
 PACKAGE_URL = 
 PACKAGE_VERSION = 0.3
 PATH_SEPARATOR = :
+PKG_CONFIG = /usr/bin/pkg-config
+PKG_CONFIG_LIBDIR = 
+PKG_CONFIG_PATH = 
 POFILES = 
 POSUB = po
 PO_IN_DATADIR_FALSE = 
