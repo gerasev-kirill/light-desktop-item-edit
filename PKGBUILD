@@ -1,9 +1,9 @@
 # Maintainer: Gerasev Kirill <gerasev.kirill@gmail.com>
 
 pkgname=light-desktop-item-edit-git
-pkgver=0.1
-pkgrel=0
-pkgdesc="Simple editor for *.desktop files"
+pkgver=0.3
+pkgrel=3
+pkgdesc="Light editor for *.desktop files (shortcuts). Without gnome-panel or xfce dependencies."
 arch=(any)
 url="https://github.com/gerasev-kirill/light-desktop-item-edit"
 license=('LGPL')
