@@ -1,87 +1,99 @@
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+# Simple desktop item edit
+# Copyright (C) 2012 Gerasev Kirill
+# This file is distributed under the same license as the
+# light-desktop-item-edit package.
+# Lara Maia <lara@craft.net.br>, 2014
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: PACKAGE VERSION\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2014-04-25 11:47-0300\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=CHARSET\n"
+        "Content-Transfer-Encoding: 8bit\n"
 
-msgid ""
-msgstr ""
+#: ../src/desktop_edit.py:42 ../ui/desktop-item-edit.ui:178
+msgid   "Browse..."
+msgstr  ""
 
-msgid "Launcher"
-msgstr ""
+#: ../src/desktop_edit.py:43 ../ui/desktop-item-edit.ui:7
+msgid   "Launcher"
+msgstr  ""
 
-msgid "Type:"
-msgstr ""
+#: ../src/desktop_edit.py:46
+msgid   "Application"
+msgstr  ""
 
-msgid "Name:"
-msgstr ""
+#: ../src/desktop_edit.py:47
+msgid   "Application in terminal"
+msgstr  ""
 
-msgid "Command:"
-msgstr ""
+#: ../src/desktop_edit.py:48
+msgid   "Location"
+msgstr  ""
 
-msgid "Categories:"
-msgstr ""
+#: ../src/desktop_edit.py:85
+msgid   "Location:"
+msgstr  ""
 
-msgid "Comment:"
-msgstr ""
+#: ../src/desktop_edit.py:87 ../ui/desktop-item-edit.ui:97
+msgid   "Command:"
+msgstr  ""
 
-msgid "Browse..."
-msgstr ""
+#: ../src/desktop_edit.py:109 ../src/directory_edit.py:86
+msgid   "Images"
+msgstr  ""
 
-msgid "Advanced"
-msgstr ""
+#: ../src/desktop_edit.py:125 ../src/directory_edit.py:102
+msgid   "Choose an icon..."
+msgstr  ""
 
-msgid "Show launcher only in DE:"
-msgstr ""
+#: ../src/desktop_edit.py:141
+msgid   "Choose location..."
+msgstr  ""
 
-msgid "Use startup notification"
-msgstr ""
+#: ../src/desktop_edit.py:145
+msgid   "Choose an application..."
+msgstr  ""
 
-msgid "Image name in icon theme: \n(or full path to image file)"
-msgstr ""
+#: ../src/directory_edit.py:42 ../ui/directory-item-edit.ui:7
+msgid   "Directory"
+msgstr  ""
 
-msgid "Directory"
-msgstr ""
+#: ../ui/desktop-item-edit.ui:63
+msgid   "Type:"
+msgstr  ""
 
-msgid "Application"
-msgstr ""
+#: ../ui/desktop-item-edit.ui:80 ../ui/directory-item-edit.ui:62
+msgid   "Name:"
+msgstr  ""
 
-msgid "Application in terminal"
-msgstr ""
+#: ../ui/desktop-item-edit.ui:114
+msgid   "Categories:"
+msgstr  ""
 
-msgid "Location"
-msgstr ""
+#: ../ui/desktop-item-edit.ui:131 ../ui/directory-item-edit.ui:79
+msgid   "Comment:"
+msgstr  ""
 
-msgid "Location:"
-msgstr ""
+#: ../ui/desktop-item-edit.ui:280
+msgid   "Show launcher only in DE:"
+msgstr  ""
 
-msgid "Choose an icon..."
-msgstr ""
+#: ../ui/desktop-item-edit.ui:312
+msgid   "Use startup notification"
+msgstr  ""
 
-msgid "Choose an application..."
-msgstr ""
+#: ../ui/desktop-item-edit.ui:333 ../ui/directory-item-edit.ui:191
+msgid   "Advanced"
+msgstr  ""
 
-msgid "Version"
-msgstr ""
-
-msgid "Usage:"
-msgstr ""
-
-msgid "[FILE...] - Edit .desktop and .directory files"
-msgstr ""
-
-msgid "Options:"
-msgstr ""
-
-msgid "print version of program"
-msgstr ""
-
-msgid "print this help"
-msgstr ""
-
-msgid "Invalid option or file. Try "
-msgstr ""
-
-msgid "Images"
-msgstr ""
-
-msgid "Choose an application..." 
-msgstr ""
-
+#: ../ui/directory-item-edit.ui:152
+msgid   "Image name in icon theme: \n"
+        "(or full path to image file)"
+msgstr  ""
