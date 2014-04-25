@@ -1,0 +1,66 @@
+# Simple desktop item edit
+# Copyright (C) 2012 Gerasev Kirill
+# This file is distributed under the same license as the
+# light-desktop-item-edit package.
+# Lara Maia <lara@craft.net.br>, 2014
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: 0.3\n"
+        "Report-Msgid-Bugs-To: lara@craft.net.br\n"
+        "POT-Creation-Date: 2014-04-25 09:26-0300\n"
+        "PO-Revision-Date: 2014-04-25 09:44-0300\n"
+        "Last-Translator: Lara Maia <lara@craft.net.br>\n"
+        "Language-Team: Brazilian Portuguese <LL@li.org>\n"
+        "Language: pt_BR\n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=utf-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/desktop_edit.py:42
+msgid   "Browse..."
+msgstr  "Navegar..."
+
+#: ../src/desktop_edit.py:43
+msgid   "Launcher"
+msgstr  "Lançador"
+
+#: ../src/desktop_edit.py:46
+msgid   "Application"
+msgstr  "Aplicativo"
+
+#: ../src/desktop_edit.py:47
+msgid   "Application in terminal"
+msgstr  "Aplicativo no terminal"
+
+#: ../src/desktop_edit.py:48
+msgid   "Location"
+msgstr  "Local"
+
+#: ../src/desktop_edit.py:85
+msgid   "Location:"
+msgstr  "Local:"
+
+#: ../src/desktop_edit.py:87
+msgid   "Command:"
+msgstr  "Comando:"
+
+#: ../src/desktop_edit.py:109 ../src/directory_edit.py:86
+msgid   "Images"
+msgstr  "Imagens"
+
+#: ../src/desktop_edit.py:125 ../src/directory_edit.py:102
+msgid   "Choose an icon..."
+msgstr  "Escolha um ícone..."
+
+#: ../src/desktop_edit.py:141
+msgid   "Choose location..."
+msgstr  "Escolha um local..."
+
+#: ../src/desktop_edit.py:145
+msgid   "Choose an application..."
+msgstr  "Escolha um aplicativo..."
+
+#: ../src/directory_edit.py:42
+msgid   "Directory"
+msgstr  "Diretório"
