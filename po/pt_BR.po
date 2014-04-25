@@ -4,63 +4,100 @@
 # light-desktop-item-edit package.
 # Lara Maia <lara@craft.net.br>, 2014
 #
-#, fuzzy
-msgid   ""
-msgstr  "Project-Id-Version: 0.3\n"
-        "Report-Msgid-Bugs-To: lara@craft.net.br\n"
-        "POT-Creation-Date: 2014-04-25 09:26-0300\n"
-        "PO-Revision-Date: 2014-04-25 09:44-0300\n"
-        "Last-Translator: Lara Maia <lara@craft.net.br>\n"
-        "Language-Team: Brazilian Portuguese <LL@li.org>\n"
-        "Language: pt_BR\n"
-        "MIME-Version: 1.0\n"
-        "Content-Type: text/plain; charset=utf-8\n"
-        "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/desktop_edit.py:42
-msgid   "Browse..."
-msgstr  "Navegar..."
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-25 11:47-0300\n"
+"PO-Revision-Date: 2014-04-25 11:52-0300\n"
+"Last-Translator: Lara Maia <lara@craft.net.br>\n"
+"Language-Team: Brazilian Portuguese <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/desktop_edit.py:43
-msgid   "Launcher"
-msgstr  "Lançador"
+#: ../src/desktop_edit.py:42 ../ui/desktop-item-edit.ui:178
+msgid "Browse..."
+msgstr "Navegar..."
+
+#: ../src/desktop_edit.py:43 ../ui/desktop-item-edit.ui:7
+msgid "Launcher"
+msgstr "Lançador"
 
 #: ../src/desktop_edit.py:46
-msgid   "Application"
-msgstr  "Aplicativo"
+msgid "Application"
+msgstr "Aplicativo"
 
 #: ../src/desktop_edit.py:47
-msgid   "Application in terminal"
-msgstr  "Aplicativo no terminal"
+msgid "Application in terminal"
+msgstr "Aplicativo no terminal"
 
 #: ../src/desktop_edit.py:48
-msgid   "Location"
-msgstr  "Local"
+msgid "Location"
+msgstr "Local"
 
 #: ../src/desktop_edit.py:85
-msgid   "Location:"
-msgstr  "Local:"
+msgid "Location:"
+msgstr "Local:"
 
-#: ../src/desktop_edit.py:87
-msgid   "Command:"
-msgstr  "Comando:"
+#: ../src/desktop_edit.py:87 ../ui/desktop-item-edit.ui:97
+msgid "Command:"
+msgstr "Comando:"
 
 #: ../src/desktop_edit.py:109 ../src/directory_edit.py:86
-msgid   "Images"
-msgstr  "Imagens"
+msgid "Images"
+msgstr "Imagens"
 
 #: ../src/desktop_edit.py:125 ../src/directory_edit.py:102
-msgid   "Choose an icon..."
-msgstr  "Escolha um ícone..."
+msgid "Choose an icon..."
+msgstr "Escolha um ícone..."
 
 #: ../src/desktop_edit.py:141
-msgid   "Choose location..."
-msgstr  "Escolha um local..."
+msgid "Choose location..."
+msgstr "Escolha um local..."
 
 #: ../src/desktop_edit.py:145
-msgid   "Choose an application..."
-msgstr  "Escolha um aplicativo..."
+msgid "Choose an application..."
+msgstr "Escolha um aplicativo..."
 
-#: ../src/directory_edit.py:42
-msgid   "Directory"
-msgstr  "Diretório"
+#: ../src/directory_edit.py:42 ../ui/directory-item-edit.ui:7
+msgid "Directory"
+msgstr "Diretório"
+
+#: ../ui/desktop-item-edit.ui:63
+msgid "Type:"
+msgstr "Tipo:"
+
+#: ../ui/desktop-item-edit.ui:80 ../ui/directory-item-edit.ui:62
+msgid "Name:"
+msgstr "Nome:"
+
+#: ../ui/desktop-item-edit.ui:114
+msgid "Categories:"
+msgstr "Categorias:"
+
+#: ../ui/desktop-item-edit.ui:131 ../ui/directory-item-edit.ui:79
+msgid "Comment:"
+msgstr "Comentário:"
+
+#: ../ui/desktop-item-edit.ui:280
+msgid "Show launcher only in DE:"
+msgstr "Mostrar lançador apenas no DE:"
+
+#: ../ui/desktop-item-edit.ui:312
+msgid "Use startup notification"
+msgstr "Usar notificação de inicialização"
+
+#: ../ui/desktop-item-edit.ui:333 ../ui/directory-item-edit.ui:191
+msgid "Advanced"
+msgstr "Avançado"
+
+#: ../ui/directory-item-edit.ui:152
+msgid ""
+"Image name in icon theme: \n"
+"(or full path to image file)"
+msgstr ""
+"Nome da imagem no tema de ícone: \n"
+"(ou o caminho completo para a imagem)"

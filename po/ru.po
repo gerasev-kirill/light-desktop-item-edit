@@ -4,63 +4,100 @@
 # light-desktop-item-edit package.
 # Lara Maia <lara@craft.net.br>, 2014
 #
-#, fuzzy
-msgid   ""
-msgstr  "Project-Id-Version: 0.3\n"
-        "Report-Msgid-Bugs-To: \n"
-        "POT-Creation-Date: 2014-04-25 09:26-0300\n"
-        "PO-Revision-Date: 2014-04-25 09:40-0300\n"
-        "Last-Translator: Lara Maia <lara@craft.net.br>\n"
-        "Language-Team: Russian <LL@li.org>\n"
-        "Language: ru\n"
-        "MIME-Version: 1.0\n"
-        "Content-Type: text/plain; charset=utf-8\n"
-        "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/desktop_edit.py:42
-msgid   "Browse..."
-msgstr  "Выбрать..."
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-25 11:47-0300\n"
+"PO-Revision-Date: 2014-04-25 09:54-0300\n"
+"Last-Translator: Lara Maia <lara@craft.net.br>\n"
+"Language-Team: Russian <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/desktop_edit.py:43
-msgid   "Launcher"
-msgstr  "Кнопка запуска"
+#: ../src/desktop_edit.py:42 ../ui/desktop-item-edit.ui:178
+msgid "Browse..."
+msgstr "Выбрать..."
+
+#: ../src/desktop_edit.py:43 ../ui/desktop-item-edit.ui:7
+msgid "Launcher"
+msgstr "Кнопка запуска"
 
 #: ../src/desktop_edit.py:46
-msgid   "Application"
-msgstr  "Приложение"
+msgid "Application"
+msgstr "Приложение"
 
 #: ../src/desktop_edit.py:47
-msgid   "Application in terminal"
-msgstr  "Приложение в терминале"
+msgid "Application in terminal"
+msgstr "Приложение в терминале"
 
 #: ../src/desktop_edit.py:48
-msgid   "Location"
-msgstr  "Адрес"
+msgid "Location"
+msgstr "Адрес"
 
 #: ../src/desktop_edit.py:85
-msgid   "Location:"
-msgstr  "Адрес:"
+msgid "Location:"
+msgstr "Адрес:"
 
-#: ../src/desktop_edit.py:87
-msgid   "Command:"
-msgstr  "Команда:"
+#: ../src/desktop_edit.py:87 ../ui/desktop-item-edit.ui:97
+msgid "Command:"
+msgstr "Команда:"
 
 #: ../src/desktop_edit.py:109 ../src/directory_edit.py:86
-msgid   "Images"
-msgstr  "Изображения"
+msgid "Images"
+msgstr "Изображения"
 
 #: ../src/desktop_edit.py:125 ../src/directory_edit.py:102
-msgid   "Choose an icon..."
-msgstr  "Выберите иконку..."
+msgid "Choose an icon..."
+msgstr "Выберите иконку..."
 
 #: ../src/desktop_edit.py:141
-msgid   "Choose location..."
-msgstr  "Выберите папку..."
+msgid "Choose location..."
+msgstr "Выберите папку..."
 
 #: ../src/desktop_edit.py:145
-msgid   "Choose an application..."
-msgstr  "Выберите приложение..."
+msgid "Choose an application..."
+msgstr "Выберите приложение..."
 
-#: ../src/directory_edit.py:42
-msgid   "Directory"
-msgstr  "Каталог"
+#: ../src/directory_edit.py:42 ../ui/directory-item-edit.ui:7
+msgid "Directory"
+msgstr "Каталог"
+
+#: ../ui/desktop-item-edit.ui:63
+msgid "Type:"
+msgstr "Тип:"
+
+#: ../ui/desktop-item-edit.ui:80 ../ui/directory-item-edit.ui:62
+msgid "Name:"
+msgstr "Имя:"
+
+#: ../ui/desktop-item-edit.ui:114
+msgid "Categories:"
+msgstr "Категории:"
+
+#: ../ui/desktop-item-edit.ui:131 ../ui/directory-item-edit.ui:79
+msgid "Comment:"
+msgstr "Примечание:"
+
+#: ../ui/desktop-item-edit.ui:280
+msgid "Show launcher only in DE:"
+msgstr "Отображать кнопку запуска только в ДЕ:"
+
+#: ../ui/desktop-item-edit.ui:312
+msgid "Use startup notification"
+msgstr "Использовать уведомление при запуске"
+
+#: ../ui/desktop-item-edit.ui:333 ../ui/directory-item-edit.ui:191
+msgid "Advanced"
+msgstr "Дополнительно"
+
+#: ../ui/directory-item-edit.ui:152
+msgid ""
+"Image name in icon theme: \n"
+"(or full path to image file)"
+msgstr ""
+"Имя иконки в теме: \n"
+"(или полный путь к картинке)"

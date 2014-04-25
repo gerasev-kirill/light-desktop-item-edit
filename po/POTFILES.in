@@ -2,3 +2,5 @@
 src/desktop_edit.py
 src/directory_edit.py
 src/ini.py
+ui/desktop-item-edit.ui
+ui/directory-item-edit.ui
