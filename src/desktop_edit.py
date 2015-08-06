@@ -181,7 +181,7 @@ class MainWindow(object):
 
             self.user_set_img = True
         else:
-            self.load_default_icon()
+            # self.load_default_icon()
             icon = Gtk.IconTheme.get_default()
             try:
                 pixbuf = icon.load_icon(self.dfile.get("Icon"), 48, 0)
